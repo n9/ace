@@ -1,0 +1,71 @@
+snippet {
+guard [^{]|^
+	{{${1}}}
+snippet {;
+guard [^{]|^
+	{{;${1}}}
+snippet {:
+guard [^{]|^
+	{{:${1} = ${2}}}
+snippet {?
+guard [^{]|^
+	{{?${1}}}
+		${2}
+	{{?}}
+snippet {?:
+guard [^{]|^
+	{{?${1} :${2:value}}}
+		${3}
+	{{?}}	
+snippet {??
+guard [^{]|^
+	{{??${1}}}
+		${2}
+snippet {??:
+guard [^{]|^
+	{{??${1} :${2:value}}}
+		${3}
+snippet {@
+guard [^{]|^
+	{{@${1} :${2:item}}}
+		${3}
+	{{@}}
+snippet {@@
+guard [^{]|^
+	{{@@}}
+		${1:,}
+snippet {?#
+guard [^{]|^
+	{{?#${1}}}
+		${2}
+	{{?}}
+snippet {?#:
+guard [^{]|^
+	{{?#${1} :${2:meta}}}
+		${3}
+	{{?}}
+snippet {#
+guard [^{]|^
+	{{#${1}}}
+snippet {#.
+guard [^{]|^
+	{{#${1}.${2}}}
+
+snippet <
+	<${1:div}>${2}</${1:div}>
+snippet <s
+	<span${1}>${2}</span>
+snippet <sc
+	<span class="${1}"${2}>${3}</span>
+snippet <d
+	<div${1}>${2}</div>
+snippet <dc
+	<div class="${1}"${2}>${3}</div>
+snippet <a
+	<a href="${1}"${2}>${3}</a>
+snippet <ac
+	<a href="${1}" class="${2}"${3}>${4}</a>
+snippet <b
+	<button${1}>${2}</button>
+snippet <bc
+	<button class="${1}"${2}>${3}</button>
